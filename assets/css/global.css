@@ -43,3 +43,118 @@ body {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
+
+p {
+    font-family: "Quicksand", sans-serif;
+
+}
+
+section {
+    scroll-margin-top: 80px;   /*controlar o enquadramento do scroll */
+}
+
+.text-small {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.button {
+    background-color: var(--tertiary-color);
+    border-radius: 500px;
+    padding: 16px 40px;
+    color: var(--text-color);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+.button .button-gradient {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.menu {
+    background-color: var(--nav-bg-color);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg-color);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    /* z-index: 1; */
+}
+
+.menu.logo {
+    max-width: 160px;
+}
+
+.menu-logo-image {
+    width: 100%;
+}
+
+.menu-item {
+    margin-right: 24px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.menu-item-button {
+    padding: 8px 26px;
+    transition: background 1s, color 1s;
+}
+
+.menu-item-button:hover {
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+}
+
+/* container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+}
+
+/* footer */
+
+.footer-link {
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
+    color: var(--link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 14px;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    transition: color 0.5s;
+}
+
+.footer-link:hover {
+    color: var(--text-color);
+}
+
+.footer-legal {
+    font-size: 0.75rem;
+    color: var(--link-color);
+    margin: 0 16px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    gap: 40px;
+}
