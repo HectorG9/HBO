@@ -127,12 +127,12 @@ main {
 /* criando a animação */
 .subscription-plans:has(.subscription-card:nth-child(1):hover)
 .subscription-card:nth-child(2) {
-    transform: rotateY('-45deg');
+    transform: rotateY(-45deg);
 }
 
 .subscription-plans:has(.subscription-card:nth-child(2):hover)
 .subscription-card:nth-child(1) {
-    transform: rotateY('45deg');
+    transform: rotateY(45deg);
 }
 
 .subscription-description{
