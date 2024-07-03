@@ -1,7 +1,7 @@
 @import url("./global.css");
 
 body {
-    background-image: url("../img/background-escuro.jpeg");
+    background-image: url("../images/background-movies-series.png");
     background-size: cover;
     height: 100vh;
 }
@@ -17,12 +17,7 @@ body {
 }
 
 .menu {
-    background: var(--form-field-bg-color);
-    border: var(--form-field-border);
-    border-radius: 8px;
-    color: var(--text-color);
-    padding: 16px;
-    font-size: 1rem;
+    position: relative;
 }
 
 .login {
@@ -43,6 +38,10 @@ body {
     margin-bottom: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.login-label{
+    text-align: left;
 }
 
 .login-field {
@@ -68,14 +67,14 @@ body {
     text-align: left;
 }
 
-.button.button-gradient {
+/* .button.button-gradient {
     background-color: transparent;
     border: var(--text-color) 2px solid;
 }
 .button.button-gradient:hover {
     cursor: pointer;
     background-color: var(--tertiary-color);
-}
+} */
 .login-links {
     color: var(--link-color);
     text-decoration: none;
