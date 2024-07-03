@@ -134,3 +134,11 @@ main {
 .subscription-card:nth-child(1) {
     transform: rotateY('45deg');
 }
+
+.subscription-description{
+    text-align: left;
+    list-style: none;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    padding-left: 14px;
+}
