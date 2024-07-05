@@ -142,3 +142,91 @@ main {
     margin-bottom: 14px;
     padding-left: 14px;
 }
+
+.subscription-price {
+    font-size: 2rem;
+    font-family: 'raleway', sans-serif;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.subscription-price .text-small{
+    color: var(--text-color);
+    /* font-weight: bold; */
+}
+
+.subscription-plan {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.contents {
+    margin: 100px auto;
+}
+
+.contents-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contents-card {
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid transparent;
+    background-position: center;
+    transition: 0.8s, background 0.8s, border 1s;
+}
+/* cria uma animação de mudança da cor da borda */
+.contents-card:hover {
+    transform: scale(1.0);
+    border: 2px solid var(--tertiary-color);
+}
+/* quando passar o mouse nas imagens, a opacidade fica em 0, causando um efeito de escurecimento */
+.contents-card:hover .contents-image {
+    opacity: 0;
+}
+/*=== diminuir as imagens e centralizando === */
+.contents-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+}
+
+/* criando configurações de transição para cada imagem default: quando passar o mouse em cima da imagem, aparecerá uma outra imagem no lugar */
+/* HBO content */
+
+.contents-card:nth-child(1):hover {
+    background-image: url('../images/hbo-hover_0.webp');
+}
+
+/* Max Originals Content */
+.contents-card:nth-child(2):hover {
+    background-image: url('../images/MAX-Hover.webp');
+}
+
+/* DC Content */
+.contents-card:nth-child(3):hover {
+    background-image: url('../images/DC-Hover.webp');
+}
+
+/* WB Content */
+.contents-card:nth-child(4):hover {
+    background-image: url('../images/WB-Hover.webp');
+}
+
+/* CN Content */
+.contents-card:nth-child(5):hover {
+    background-image: url('../images/CN-Hover.png');
+}
+
+/* UEFA Content */
+
+.contents-card:nth-child(6):hover {
+    background-image: url('../images/UCL-Hover.webp');
+}
